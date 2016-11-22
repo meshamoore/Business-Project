@@ -9,3 +9,10 @@ get '/contact' do
 	@heading = 'Contact Us'
 	erb :contact
 end
+
+get '/home' do
+	@title = "Bubba's Pygmy Goat Rental"
+	@heading = "Bubba's Pygmy Goat Rental"
+
+	erb :home
+end
