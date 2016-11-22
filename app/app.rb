@@ -13,9 +13,22 @@ end
 get '/contact' do
 	@title = 'Contact'
 	@heading = 'Contact Us Today About Our Goats'
+	@submitted = params[:submitted] ? true : false
 	erb :contact
 end
 
+get '/home' do
+	@title = "Bubba's Pygmy Goat Rental"
+	@heading = "Bubba's Pygmy Goat Rental"
+
+	erb :home
+end
+
 post '/contact' do
-	"You submitted the form"
+	send_email(params[:email], params[:name], params[:message])
+	redirect to('/contact?submitted=1')
+end
+
+def send_email(address, name, message)
+	# send email here
 end

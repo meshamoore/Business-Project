@@ -1,0 +1,37 @@
+#site-footer {
+	margin-top: 15px;
+	background: #000;
+	min-height: 400px;
+	color: #fff;
+
+	.fa {
+		font-size: 40px;
+	}
+}
+
+.col-sm-4 {
+	padding: 15px;
+	font-family: arial;
+}
+
+a {
+    color: #f48042;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: white;
+}
+
+.fa-facebook {
+	margin-right: 15px;
+}
+
+.fa-twitter {
+	margin-right: 15px;
+}
+
+.fa-paypal {
+	margin-right: 15px;
+
+}
