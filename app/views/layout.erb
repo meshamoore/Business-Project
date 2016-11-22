@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <h1><%= @heading %></h1>
-    <%= yield %>
+	<%= erb :nav %>
+	<h1><%= @heading %></h1>
+	<%= yield %>
 </body>
 </html>
