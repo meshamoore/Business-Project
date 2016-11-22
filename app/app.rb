@@ -16,6 +16,14 @@ get '/contact' do
 	erb :contact
 end
 
+get '/home' do
+	@title = "Bubba's Pygmy Goat Rental"
+	@heading = "Bubba's Pygmy Goat Rental"
+
+	erb :home
+end
+
 post '/contact' do
 	"You submitted the form"
+
 end
