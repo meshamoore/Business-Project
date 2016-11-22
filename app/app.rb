@@ -6,6 +6,10 @@ end
 
 get '/contact' do
 	@title = 'Contact'
-	@heading = 'Contact Us'
+	@heading = 'Contact Us Today About Our Goats'
 	erb :contact
+end
+
+post '/contact' do
+	"You submitted the form"
 end
