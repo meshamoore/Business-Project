@@ -32,3 +32,9 @@ end
 def send_email(address, name, message)
 	# send email here
 end
+
+get '/about' do
+	@title = "About"
+	@heading = "About Us"
+	erb :about
+end
