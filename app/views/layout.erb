@@ -4,11 +4,41 @@
     <title><%= @title %></title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<%= erb :nav %>
-	<h1><%= @heading %></h1>
-	<%= yield %>
+
+	<div class="container">
+		<h1 id=globalheader><%= @heading %></h1>
+		<%= yield %>
+	</div>
+
+	<div id="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					OUR AFFILIATE GOAT GROUPIES<br>
+					www.goatsforever.com<br>
+					www.kohlsgoats.com<br>
+					www.goatsofaustin.com<br>
+				</div>
+
+				<div class="col-sm-4">
+					HEADQUARTERS LOCATION <br>
+					14394 Bartlett Rd.<br>
+					Austin, Texas 87844<br>
+				</div>
+
+				<div class="col-sm-4">
+					<a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </body>
 </html>
