@@ -1,4 +1,5 @@
 require "sinatra"
+require_relative "helpers.rb"
 
 get '/gallery' do
 	@title = 'Gallery'
@@ -25,10 +26,14 @@ get '/home' do
 end
 
 post '/contact' do
-	send_email(params[:email], params[:name], params[:message])
+	puts params.inspect
+	send_email(params[:email], "New PYGMY EMAIL", "Thank you for contacting us. We'll get back to you as soon as we can.")
 	redirect to('/contact?submitted=1')
 end
 
-def send_email(address, name, message)
-	# send email here
+get '/about' do
+	@title = "About"
+	@heading = "About Us"
+	erb :about
 end
+

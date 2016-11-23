@@ -11,8 +11,10 @@
 	<%= erb :nav %>
 
 	<div class="container" id="main">
-		<h1 id="global-header"><%= @heading %></h1>
-		<%= yield %>
+		<div id="wrapper">
+			<h1 id="global-header"><%= @heading %></h1>
+			<%= yield %>
+		</div>
 	</div>
 
 	<div id="site-footer">

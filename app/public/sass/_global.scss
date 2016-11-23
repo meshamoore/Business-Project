@@ -3,10 +3,22 @@ img {
 	width: 100%;
 }
 
-#global-header {
-	color: #f48042;
+body {
+	background-image: url("/images/ccgoat.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-#main {
-	min-height: 400px;
+#wrapper {
+	background: rgba(255,255,255,0.7);
+	border-radius: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	height: 100%;
+	padding: 40px;
+	min-height: 600px;
+}
+
+#global-header {
+	color: #f48042;
 }
