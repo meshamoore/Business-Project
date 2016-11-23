@@ -26,8 +26,14 @@ get '/home' do
 end
 
 post '/contact' do
-
 	puts params.inspect
 	send_email(params[:email], "New PYGMY EMAIL", "Thank you for contacting us. We'll get back to you as soon as we can.")
 	redirect to('/contact?submitted=1')
 end
+
+get '/about' do
+	@title = "About"
+	@heading = "About Us"
+	erb :about
+end
+
